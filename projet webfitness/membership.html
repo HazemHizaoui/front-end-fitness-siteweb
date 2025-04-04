@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="jss.js"></script>
+</head>
+<body>
+    <header>
+        <h1>California Gym</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos de nous</a></li>
+                <li><a href="gym-classes.html">Cours</a></li>
+                <li><a href="#">Abonnement</a></li>
+                <li><a href="calimc.html">imc</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align: center;" id="inscription">Inscription</h1>
+    <fieldset>
+        <legend>Informations personnelles</legend>
+        <form>
+            <div>
+                <label>Nom</label>
+                <input type="text" id="nom" required>
+            </div><br>
+            <div>
+                <label>Prénom</label>
+                <input type="text" id="prenom" required>
+            </div><br>
+            <div>
+                <label>Date de naissance</label>
+                <input type="date" required>
+            </div><br>
+            <div>
+                <label>Sexe:</label>
+                <input type="radio" name="s" value="feminine" id="g1" required> Féminin
+                <input type="radio" name="s" value="masculin" id="g2" required> Masculin
+            </div><br>
+            <div>
+                <label>Nationalité</label>
+                <input type="text" id="nationalite" required>
+            </div><br>
+            <div>
+                <label>E-mail</label>
+                <input type="text" id="email" required>
+            </div><br>
+            <div>
+                <label>Téléphone</label>
+                <div style="display: flex; align-items: center;">
+                    <select name="country-code" required style="margin-right: 10px;">
+                        <option value="+1">+216 (Tunisie)</option>
+                        <option value="+33">+213 (Algérie)</option>
+                        <option value="+44">+212 (Maroc)</option>
+                    </select>
+                    <input type="text" placeholder="Numéro de téléphone" id="tel" required>
+                </div>
+            </div>
+            <input type="submit" value="Envoyer" onclick="verif()">
+            <input type="reset" value="Annuler">
+        </form>
+    </fieldset>
+</body>
+</html>
